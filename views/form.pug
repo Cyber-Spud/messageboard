@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    h1 New Year Resolutions
+    <div class="message-container__main">
+        
+        
+        <form method="POST" action="/new">
+            <div class="form-container">
+                <div class="input-container">
+                    <input type="text" name="user" required=""/>
+                    <label>Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="resolution" required=""/>
+                    <label>New Year Resolution</label>
+                </div>
+            </div>
+            <div class="button-panel">
+                <div class="button-container__send">
+                <button class="button__send" type="submit" value="Send">
+                    <svg class="svg-send__back" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon class="polygon1" points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button><svg class="svg-send__front" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon class="polygon1" points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </div>
+                <div class="button-container__back" onclick="location.href='./'">
+                    <svg class="svg-back" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line></svg>
+                </div>
+            </div>
+        </form>
+    </div>

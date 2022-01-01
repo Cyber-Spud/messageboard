@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+body {
+  padding-top: 1rem;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #2e2d2d;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #0099ff;
+}
+
+.message-container__main {
+  margin-top: 1rem;
+}
+
+.message-container {
+  background-color: #d13232;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 0.05rem;
+
+}
+
+p, label {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.text-user {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+
+}
+
+.text-resolution {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+ 
+} 
+
+.text-added {
+  text-align: right;
+  margin-bottom: 0.1rem;
+  font-size: 0.75rem;
+}
+
+.button-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+}
+
+.add-container {
+  display: inline-block;
+  width: fit-content;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+
+.button-container__back {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: 2.7rem;
+  border-radius: 100%;
+  background-color: #ffffff;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+svg {
+  display: inline-block;
+  stroke: #a32626;
+  fill: blanchedalmond;
+  width: 2rem;
+  height: 2rem;
+}
+
+.svg-back {
+  width: 2.66rem;
+  height: 2.66rem;
+}
+
+.svg-send__back {
+  stroke: none;
+  pointer-events:none;
+  width: 3rem;
+  height: 3rem;
+  stroke: none;
+}
+
+
+.svg-send__front {
+  position: relative;
+  top: -33px;
+  left: 13px;
+  stroke: #a32626;
+  fill: none;
+  pointer-events:none;
+}
+
+.form-container {
+  background-color: #d13232;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem 1rem;
+}
+
+/* Input container code sourced from Niklesh Tiwane at https://codepen.io/nikstech/pen/xmMxpr */
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size: 0.8rem;
+	color:#fff;	
+  pointer-events:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid rgb(218, 218, 218);  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #aa2626;	
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:0.5rem;	
+}
+
+/* End of externally sourced code. Thanks */
+
+.button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  width: fit-content;
+  height: 2.5rem;
+  background: none;
+  border-radius: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button__send {
+  display: flex;
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  background: none;
+  border-radius: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+
+  h1 {
+    font-size: 1.66rem;
+  }
+
+  .message-container__main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-container label {
+    font-size: 1rem;
+  }
+
+}
