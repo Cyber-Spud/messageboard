@@ -3,14 +3,14 @@ var router = express.Router();
 
 const messages = [
   {
-    resolution: "Hi there!",
-    user: "Amando",
-    added: new Date().toString().slice(4,21)
+    resolution: "No beer on Tuesdays",
+    user: "Amanda",
+    added: "Jan 01 2022 9:32"
   },
   {
-    resolution: "Hello World!",
+    resolution: "Read a book",
     user: "Charles",
-    added: new Date().toString().slice(4,21)
+    added: "Jan 01 2022 14:55"
   }
 ];
 
